@@ -1,3 +1,5 @@
+server:
+  port: 8181
 twitter-to-kafka-service:
   twitter-keyword:
     - Java
@@ -26,6 +28,6 @@ kafka-producer-config:
   acsk: all
   batch-size: 16384
   batch-size-boost-factor: 100
-  linger-ms: 5  # Adds a delay on producer in case of lighter load
+  linger-ms: 5 # Adds a delay on producer in case of lighter load
   request-timeout-ms: 60000
   retry-count: 5
